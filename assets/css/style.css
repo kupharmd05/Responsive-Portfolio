@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    color: #777777;
+     }
+.header {
+        background-color: #ffffff;
+        padding: 20px 20px 10px 20px;
+        border-bottom: 5px solid gray;
+        height: 100px; 
+}
+
+  .wrapper {
+    width: 960px;
+    padding: 10 50;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background: #ffffff;
+}
+
+img {
+    float: left;
+    padding: 10px;
+}
+
+#name {
+    color: #ffffff;
+    background: #4aaaa5;
+    padding: 20px;
+    margin-left: 175px;
+    width: 250px;
+}
+
+.link {
+    position: absolute;
+    right: 200;
+    top: 50;
+}
+
+.link a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #666666;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-size: 24px;
+    margin-left: 20px;
+    border-bottom: 2px solid gray;
+}
+p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#contactname {
+    width: 100%;
+}
+
+#contactemail {
+    width: 100%;
+}
+
+#contactmessage {
+    width: 100%;
+    height: 250px;
+}
+
+#submitbutton {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 65px;
+    height: 25px;
+}
+
+.images {
+    float: left;
+    width: 66%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.beachtext {
+    position: relative;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    float: left;
+}   
+
+#beach {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    width: 100%;
+    background-color: #4aaaa5;
+}
+
+.citytext {
+    position: relative;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+}
+
+#city {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    width: 100%;
+    background-color: #4aaaa5;
+}
+
+#sunset {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    width: 100%;
+    background-color: #4aaaa5;
+}
+
+#trees {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    width: 100%;
+    background-color: #4aaaa5;
+}
+
+#flower {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    width: 100%;
+    background-color: #4aaaa5;
+}
+
+.footer {
+    background: #666666;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: #4aaaa5 8px solid;
+    clear: both;
+}
+@media screen and (max-width: 980px) {
+    .wrapper {
+        width: 650px;
+    }
+    #indexImage {
+        width: 300px; 
+        height: 250px;
+    }
+    .images {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 650px;
+    }
+    #name {
+        margin-left: 50px;
+        float: left;
+    }
+    .link {
+        float: right;
+        position: absolute;
+        right: 100px;
+        
+    }
+}
+@media screen and (max-width: 640px) {
+    .header {
+        position: static;
+        height: 18vh;
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+    
+    #name {
+        clear: all;
+        width: 100vw;
+        margin: 0;
+    }
+    
+    .link {
+        width: 100vw;
+        position: absolute;
+        top: 100px;
+        right: auto;   
+    }
+    .wrapper {
+        width: 90vw;
+    }
+    .citytext {
+        margin-left: 0;
+    }
+}
