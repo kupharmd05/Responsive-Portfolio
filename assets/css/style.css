@@ -242,7 +242,7 @@ p {
 @media screen and (max-width: 640px) {
     .header {
         position: static;
-        height: 18vh;
+        height: 22vh;
         width: 100vw;
         padding-left: 0;
         padding-right: 0;
@@ -259,7 +259,7 @@ p {
     .link {
         width: 100vw;
         position: absolute;
-        top: 100px;
+        top: 75px;
         right: auto;   
     }
     .wrapper {
